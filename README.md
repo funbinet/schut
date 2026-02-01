@@ -22,8 +22,6 @@
 
 ---
 
----
-
 ## Overview
 
 **SCHUT** (Secure Connection Hub & Unified Tunnel) is a modern, feature-rich GUI
