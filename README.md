@@ -23,7 +23,7 @@
 ---
 
 <p align="center">
-  <img src="schut1.png" alt="SCHUT" width="1260"/>
+  <img src="schut1.png" alt="SCHUT" width="720"/>
 </p>
 
 ---
@@ -100,6 +100,10 @@ SCHUT supports three primary connection modes:
 ### 2. VPN-Only Mode
 **Purpose**: Fast, encrypted connection without Tor overhead.
 
+<p align="center">
+  <img src="schut-vpn.png" alt="SCHUT" width="720"/>
+</p>
+
 **Flow**:
 - Traffic → VPN Tunnel → Internet
 
@@ -113,6 +117,10 @@ SCHUT supports three primary connection modes:
 
 ### 3. Tor-Only Mode
 **Purpose**: Anonymous browsing without VPN dependency.
+
+<p align="center">
+  <img src="schut-tor.png" alt="SCHUT" width="720"/>
+</p>
 
 **Flow**:
 - Traffic → Tor Entry → Tor Middle → Tor Exit → Internet
