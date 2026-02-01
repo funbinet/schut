@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="schut.png" alt="SCHUT" width="300"/>
+  <img src="schut.png" alt="SCHUT" width="200"/>
 </p>
 
 <h1 align="center">SCHUT</h1>
@@ -22,18 +22,14 @@
 
 ---
 
-<p align="center">
-  <img src="schut1.png" alt="SCHUT" width="720"/>
-</p>
-
 ---
 
 ## Overview
 
 **SCHUT** (Secure Connection Hub & Unified Tunnel) is a modern, feature-rich GUI
-application for managing VPN and Tor connections on Linux. Built with Python and
+application for managing VPN, Tor network tunneling on Linux. Built with Python and
 PyQt6, it provides a unified interface for establishing secure, anonymous internet
-connections through a streamlined graphical interface.
+connections through a streamlined graphical interface. Now with SSH SOCKS Proxy support for additional tunneling options.
 
 The application transforms complex anonymity workflows into a simple one-click
 experience, eliminating the need to manually configure VPN clients, Tor services,
@@ -46,8 +42,8 @@ VPN establishment to Tor transparent proxy configuration.
 
 SCHUT addresses the fundamental challenges in maintaining online anonymity:
 
-- **Configuration Complexity**: Setting up VPN + Tor chains requires extensive technical knowledge
-- **Manual Processes**: Coordinating VPN connections, Tor services, and firewall rules manually is error-prone
+- **Configuration Complexity**: Setting up VPN + Tor + Proxy chains requires extensive technical knowledge
+- **Manual Processes**: Coordinating VPN connections, Tor services, SSH tunnels, and firewall rules manually is error-prone
 - **DNS Leaks**: Improper configuration can expose real IP addresses through DNS requests
 - **Connection Management**: Difficult to monitor connection status and switch between modes
 - **Kill Switch**: Lack of proper traffic protection when connections drop
@@ -58,6 +54,10 @@ handles the entire anonymity workflow automatically.
 ---
 
 ## Architecture & Design
+
+<p align="center">
+  <img src="schut1.png" alt="SCHUT" width="700"/>
+</p>
 
 ### Unified Interface
 - **Single Application**: One GUI for VPN, Tor, and network management
@@ -101,7 +101,7 @@ SCHUT supports three primary connection modes:
 **Purpose**: Fast, encrypted connection without Tor overhead.
 
 <p align="center">
-  <img src="schut-vpn.png" alt="SCHUT" width="720"/>
+  <img src="schut-vpn.png" alt="SCHUT" width="700"/>
 </p>
 
 **Flow**:
@@ -119,7 +119,7 @@ SCHUT supports three primary connection modes:
 **Purpose**: Anonymous browsing without VPN dependency.
 
 <p align="center">
-  <img src="schut-tor.png" alt="SCHUT" width="720"/>
+  <img src="schut-tor.png" alt="SCHUT" width="700"/>
 </p>
 
 **Flow**:
@@ -148,6 +148,10 @@ SCHUT supports three primary connection modes:
 - **Multiple Modes**: VPN-only, Tor-only, or full chain
 - **IP Display**: Current external IP shown in interface
 - **Quick IP Info**: Click IP button for detailed geolocation data
+
+<p align="center">
+  <img src="schut-info.png" alt="SCHUT" width="700"/>
+</p>
 
 ### Security Features
 - **Transparent Proxy**: System-wide traffic routing through Tor
@@ -208,6 +212,10 @@ sudo python3 schut.py
 3. **Enter Credentials**: Input VPN username and password
 4. **Save Configuration**: Click Save to store settings
 5. **Connect**: Click START to establish connection
+
+<p align="center">
+  <img src="schut-vpnconf.png" alt="SCHUT" width="300"/>
+</p>
 
 ---
 
