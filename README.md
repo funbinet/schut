@@ -54,7 +54,7 @@ handles the entire anonymity workflow automatically.
 ## Architecture & Design
 
 <p align="center">
-  <img src="schut1.png" alt="SCHUT" width="700"/>
+  <img src="schut1.png" alt="SCHUT" width="400"/>
 </p>
 
 ### Unified Interface
@@ -99,7 +99,7 @@ SCHUT supports three primary connection modes:
 **Purpose**: Fast, encrypted connection without Tor overhead.
 
 <p align="center">
-  <img src="schut-vpn.png" alt="SCHUT" width="700"/>
+  <img src="schut-vpn.png" alt="SCHUT" width="400"/>
 </p>
 
 **Flow**:
@@ -117,7 +117,7 @@ SCHUT supports three primary connection modes:
 **Purpose**: Anonymous browsing without VPN dependency.
 
 <p align="center">
-  <img src="schut-tor.png" alt="SCHUT" width="700"/>
+  <img src="schut-tor.png" alt="SCHUT" width="400"/>
 </p>
 
 **Flow**:
@@ -148,7 +148,7 @@ SCHUT supports three primary connection modes:
 - **Quick IP Info**: Click IP button for detailed geolocation data
 
 <p align="center">
-  <img src="schut-info.png" alt="SCHUT" width="700"/>
+  <img src="schut-info.png" alt="SCHUT" width="400"/>
 </p>
 
 ### Security Features
@@ -212,7 +212,7 @@ sudo python3 schut.py
 5. **Connect**: Click START to establish connection
 
 <p align="center">
-  <img src="schut-vpnconf.png" alt="SCHUT" width="300"/>
+  <img src="schut-vpnconf.png" alt="SCHUT" width="400"/>
 </p>
 
 ---
