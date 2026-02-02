@@ -181,28 +181,28 @@ SCHUT supports three primary connection modes:
 - **Anonymity Network**: Tor service
 - **Firewall**: iptables for transparent proxy
 
-### Required Packages
-```bash
-# Debian/Ubuntu/Kali
-sudo apt install python3-pyqt6 openvpn tor iptables curl
-```
-
 ---
 
 ## Installation
 
-### Quick Install
+### Quick Install (Debian/Ubuntu)
 ```bash
-# Clone repository
-git clone https://github.com/funbinet/schut.git
-cd schut
+# Download the DEB package
+wget https://github.com/funbinet/schut/releases/download/v1.0.0/schut_1.0.0_all.deb
 
-# Install dependencies
-sudo apt install python3-pyqt6 openvpn tor iptables curl
+# Install dependencies and package
+sudo apt install openvpn tor iptables curl
+sudo dpkg -i schut_1.0.0_all.deb
 
 # Run SCHUT
-sudo python3 schut.py
+schut
 ```
+
+### Alternative: Manual Download
+1. Go to [SCHUT Releases](https://github.com/funbinet/schut/releases/tag/v1.0.0)
+2. Download `schut_1.0.0_all.deb`
+3. Install with: `sudo dpkg -i schut_1.0.0_all.deb`
+4. Fix any missing dependencies: `sudo apt --fix-broken install`
 
 ### First Run
 1. **Configure VPN**: Click the settings (⚙) button
@@ -210,6 +210,36 @@ sudo python3 schut.py
 3. **Enter Credentials**: Input VPN username and password
 4. **Save Configuration**: Click Save to store settings
 5. **Connect**: Click START to establish connection
+
+---
+
+## Usage
+
+### Launching SCHUT
+```bash
+# From terminal (runs with root privileges automatically)
+schut
+```
+
+### Connection Modes
+
+| Mode | Description | Click Action |
+|------|-------------|--------------|
+| **VPN Only** | OpenVPN tunnel | Click START |
+| **TOR Only** | TOR network routing | Click START |
+| **VPN + TOR** | VPN then TOR chain | Enable both, START |
+
+### Interface Controls
+
+| Button | Function |
+|--------|----------|
+| **START** | Establish selected connection(s) |
+| **STOP** | Terminate all active tunnels |
+| **⚙ (Settings)** | Configure VPN credentials |
+| **? (Help)** | View documentation |
+| **✕ (Close)** | Exit application |
+
+---
 
 <p align="center">
   <img src="schut-vpnconf.png" alt="SCHUT" width="400"/>
